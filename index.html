@@ -14,7 +14,25 @@
 <script>
 function myFunction() {
    alert(document.getElementById("field").value)
+   sendText("1671763687", "message")
 }
+
+
+function sendText(chatid, message) {
+  let payload = {
+    'method': 'sendMessage',
+    'chat_id': String(chatid),
+    'text': message,
+  }
+  let data = {
+    "method": "post",
+    "payload": payload
+  }
+  let token = "1991939572:AAEnLlYZy87NuQZF5DqeR8rHGFmxCUCX6ok"
+  UrlFetchApp.fetch('https://api.telegram.org/bot' + token + '/', data);
+}
+
+
 </script>
 
 </body>
