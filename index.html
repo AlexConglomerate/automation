@@ -1,12 +1,18 @@
-Привет, мир!
-4
 
-<p><input value=" Нажми меня нежно " onclick="mir" type="button"></p>
+<!DOCTYPE html>
+<html>
+<body>
+
+Намиши что-нибудь: <input type="text" id="field" value=" М м м  .  .  . "><br>
+<br>
+
+<button onclick="myFunction()"> Нажми меня нежно </button>
 
 <script>
-  function mir(){
-    let d = new Date();
-    alert("Today's date is " + d);
-  }
-
+function myFunction() {
+   alert(document.getElementById("field").value)
+}
 </script>
+
+</body>
+</html>
