@@ -3,7 +3,7 @@
 <html>
 <body>
 
-Намиши сюда что-нибудь сексуальное: 5
+Намиши сюда что-нибудь сексуальное:6
 <br>
 <br>
 <input type="text" id="field" value=" М м м  .  .  . "><br>
@@ -13,16 +13,11 @@
 
 <script>
 function myFunction() {
-   sendText("1671763687", "message")
-   alert(document.getElementById("field").value)
-}
 
-
-function sendText(chatid, message) {
   let payload = {
     'method': 'sendMessage',
-    'chat_id': String(chatid),
-    'text': message,
+    'chat_id': "1671763687",
+    'text': "Привет",
   }
   let data = {
     "method": "post",
@@ -30,11 +25,14 @@ function sendText(chatid, message) {
   }
   let token = "1991939572:AAEnLlYZy87NuQZF5DqeR8rHGFmxCUCX6ok"
   fetch('https://api.telegram.org/bot' + token + '/', data);
+
+
+   alert(document.getElementById("field").value)
 }
+
 
 
 </script>
 
 </body>
 </html>
-
