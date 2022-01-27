@@ -1,0 +1,19 @@
+.b1 {
+    background: rgba(82, 51, 23, 0.26);
+    /* Синий цвет фона */
+    color: white;
+    /* Белые буквы */
+    font-size: 9pt;
+    /* Размер шрифта в пунктах */
+}
+
+.forFaz {
+    width: 30px;
+    height: 30px;
+    background: rgba(72, 255, 0, 0.26);
+    /* Синий цвет фона */
+    color: white;
+    /* Белые буквы */
+    font-size: 9pt;
+    /* Размер шрифта в пунктах */
+}
